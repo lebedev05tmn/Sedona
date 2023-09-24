@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Седона: Гостиницы</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./ico/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="page__container">
+      <header class="page__header">
+        <nav class="header_navigation">
+          <ul class="navigation__menu">
+            <li class="menu__item logo">
+              <a href="./index.html" class="navigation__logo"
+                ><img
+                  src="./img/logo.svg"
+                  alt="Логотип Седона"
+                  width="139"
+                  height="70"
+              /></a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">О Седоне</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__item-active">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user">
+          <a href="#" class="user__search"
+            ><svg
+              width="20"
+              height="19"
+              viewBox="0 0 20 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+          <a href="#" class="user__like"
+            ><svg
+              width="19"
+              height="17"
+              viewBox="0 0 19 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.44382 17C9.14296 17 8.84211 16.9 8.64155 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03416 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44382 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03416 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z"
+                fill="black"
+              />
+            </svg>
+          </a>
+          <a href="#" class="user__button btn">Хочу сюда</a>
+        </div>
+      </header>
+      <main class="page__main">
+        <div class="page__container catalog">
+          <section class="main__filter">
+            <div class="filter__box">
+              <div class="filter__base">
+                <h2 class="filter__title title">Гостинницы Седоны</h2>
+                <nav class="filter__navbar">
+                  <ul class="navbar__list">
+                    <li class="navbar__item">
+                      <a href="index.html" class="navbar__link"
+                        ><svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_31961_567)">
+                            <path
+                              d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M4 10H5V7.5H7V10H8V6.5H4V10Z"
+                              fill="white"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_31961_567">
+                              <rect width="12" height="12" fill="white" />
+                            </clipPath>
+                          </defs></svg
+                      ></a>
+                    </li>
+                    <li class="navbar__item navbar__item-center">
+                      <a href="index.html" class="navbar__link"
+                        ><svg
+                          width="5"
+                          height="8"
+                          viewBox="0 0 5 8"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.79998 3.60005L0.999984 0.200049C0.799984 4.88311e-05 0.399984 4.88311e-05 0.0999836 0.200049C-0.200016 0.400049 -0.100016 0.800049 0.0999836 1.00005L3.39998 4.00005L0.199984 7.00005C-1.63764e-05 7.20005 -1.63764e-05 7.60005 0.199984 7.80005C0.199984 7.90005 0.499984 8.00005 0.599984 8.00005C0.699984 8.00005 0.899984 7.90005 0.999984 7.80005L4.79998 4.40005C5.09998 4.20005 5.09998 3.80005 4.79998 3.60005Z"
+                            fill="white"
+                          /></svg
+                      ></a>
+                    </li>
+                    <li class="navbar__item">
+                      <a href="#" class="navbar__link">Гостинницы</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="filter__settings">
+                <form
+                  action="https://echo.htmlacademy.ru/courses"
+                  method="post"
+                >
+                  <fieldset class="filter__infrastructure">
+                    <legend class="infrastructure__title title">
+                      Инфраструктура
+                    </legend>
+                    <ul class="infrastructure__checkbox">
+                      <li class="infrastructure__checkbox1">
+                        <input
+                          type="checkbox"
+                          name="waterpool"
+                          id="checkbox1"
+                          checked
+                        />
+                        <label for="checkbox1" class="checked">Бассейн</label>
+                      </li>
+                      <li class="infrastructure__checkbox2 input-center">
+                        <input
+                          type="checkbox"
+                          name="parking"
+                          id="checkbox2"
+                          checked
+                        />
+                        <label for="checkbox2" class="checked">Парковка</label>
+                      </li>
+                      <li class="infrastructure__checkbox3">
+                        <input type="checkbox" name="wifi" id="checkbox3" />
+                        <label for="checkbox3">Wi-Fi</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filter__type">
+                    <legend class="type__title title">Тип жилья</legend>
+                    <ul class="type__radio">
+                      <li class="type__radio1">
+                        <label class="checked">
+                          <input
+                            type="radio"
+                            name="type"
+                            id="radio1"
+                            value="hot"
+                            checked
+                          />
+                          Гостинница
+                        </label>
+                      </li>
+                      <li class="type__radio2 input-center">
+                        <label>
+                          <input
+                            type="radio"
+                            name="type"
+                            value="mot"
+                            id="radio2"
+                          />
+                          Мотель
+                        </label>
+                      </li>
+                      <li class="type__radio3">
+                        <label>
+                          <input
+                            type="radio"
+                            name="type"
+                            value="apa"
+                            id="radio3"
+                          />
+                          Апартаменты
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filter__cost">
+                    <legend class="cost__title title">Стоимость, ₽:</legend>
+                    <label for="r1"
+                      ><input type="text" id="r1" name="ot" value="0"
+                    /></label>
+                    <label for="r2"
+                      ><input type="text" id="r2" name="do" value="9000"
+                    /></label>
+                    <div class="cost__range">
+                      <button>Ручка минимальной цены</button>
+                      <button>Ручка максимальной цены</button>
+                    </div>
+                  </fieldset>
+                  <fieldset class="filter__btns">
+                    <legend class="btns__title visually-hidden">Кнопки</legend>
+                    <input
+                      class="btns__submit"
+                      type="submit"
+                      value="Применить"
+                    />
+                    <input
+                      class="filter__reset"
+                      type="reset"
+                      value="Сбросить"
+                    />
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="main__catalog">
+            <div class="catalog__sort">
+              <h2 class="sort__title title-1">Найдено гостиниц: 38</h2>
+              <select class="sort__select" name="price">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="comfortable">Сначала комфортные</option>
+              </select>
+              <ul class="sort__list">
+                <li class="sort__item">
+                  <a href="#" class="black-border"
+                    ><svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_24196_296)">
+                        <path d="M4 0H0V6H4V0Z" fill="black" />
+                        <path d="M16 0H12V6H16V0Z" fill="black" />
+                        <path d="M10 0H6V6H10V0Z" fill="black" />
+                        <path d="M4 8H0V14H4V8Z" fill="black" />
+                        <path d="M16 8H12V14H16V8Z" fill="black" />
+                        <path d="M10 8H6V14H10V8Z" fill="black" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_24196_296">
+                          <rect width="16" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sort__item center-item">
+                  <a href="#"
+                    ><svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_24196_293)">
+                        <path d="M16 12H0V14H16V12Z" fill="black" />
+                        <path
+                          d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z"
+                          fill="black"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_24196_293">
+                          <rect width="16" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="sort__item">
+                  <a href="#"
+                    ><svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_24196_306)">
+                        <path d="M2 0H0V2H2V0Z" fill="black" />
+                        <path d="M16 0H4V2H16V0Z" fill="black" />
+                        <path d="M2 4H0V6H2V4Z" fill="black" />
+                        <path d="M16 4H4V6H16V4Z" fill="black" />
+                        <path d="M2 8H0V10H2V8Z" fill="black" />
+                        <path d="M16 8H4V10H16V8Z" fill="black" />
+                        <path d="M2 12H0V14H2V12Z" fill="black" />
+                        <path d="M16 12H4V14H16V12Z" fill="black" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_24196_306">
+                          <rect width="16" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="catalog__list">
+              <li class="catalog__card">
+                <img src="./img/content/hotel-1.png" alt="Отель1" />
+                <h2 class="card__title">
+                  <a href="./img/content/hotel-1.png" class="card__link"
+                    >Amara Resort & Spa</a
+                  >
+                </h2>
+                <ul class="card__properties">
+                  <li class="card__item"><span>Гостинница</span></li>
+                  <li class="card__item"><span>От 4000 ₽</span></li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item">
+                    <a href="#" class="card__link btn">ПОДРОБНЕЕ</a>
+                  </li>
+                  <li class="card__item">
+                    <a href="#" class="card__link btn-1">В ИЗБРАННОЕ</a>
+                  </li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item stars">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li class="card__item">
+                    <span class="rate">Рейтинг: 8,5</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="catalog__card">
+                <img src="./img/content/hotel-2.png" alt="Отель2" />
+                <h2 class="card__title">
+                  <a href="./img/content/hotel-2.png" class="card__link"
+                    >Desert Quail Inn</a
+                  >
+                </h2>
+                <ul class="card__properties">
+                  <li class="card__item"><span>Гостинница</span></li>
+                  <li class="card__item"><span>От 3000 ₽</span></li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item">
+                    <a href="#" class="card__link btn">ПОДРОБНЕЕ</a>
+                  </li>
+                  <li class="card__item">
+                    <a href="#" class="card__link btn-1">В ИЗБРАННОЕ</a>
+                  </li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item stars">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li class="card__item">
+                    <span class="rate">Рейтинг: 8,9</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="catalog__card">
+                <img src="./img/content/hotel-3.png" alt="Отель3" />
+                <h2 class="card__title">
+                  <a href="./img/content/hotel-3.png" class="card__link"
+                    >Villas at Poco Diablo</a
+                  >
+                </h2>
+                <ul class="card__properties">
+                  <li class="card__item"><span>Гостинница</span></li>
+                  <li class="card__item"><span>От 2000 ₽</span></li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item">
+                    <a href="#" class="card__link btn">ПОДРОБНЕЕ</a>
+                  </li>
+                  <li class="card__item">
+                    <a href="#" class="card__link selected">В ИЗБРАННОМ</a>
+                  </li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item stars">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li class="card__item">
+                    <span class="rate">Рейтинг: 9,2</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="catalog__card">
+                <img src="./img/content/hotel-4.png" alt="Отель4" />
+                <h2 class="card__title">
+                  <a href="./img/content/hotel-4.png" class="card__link"
+                    >GreenTree Inn</a
+                  >
+                </h2>
+                <ul class="card__properties">
+                  <li class="card__item"><span>Гостинница</span></li>
+                  <li class="card__item"><span>От 3000 ₽</span></li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item">
+                    <a href="#" class="card__link btn">ПОДРОБНЕЕ</a>
+                  </li>
+                  <li class="card__item">
+                    <a href="#" class="card__link btn-1">В ИЗБРАННОЕ</a>
+                  </li>
+                </ul>
+                <ul class="card__properties">
+                  <li class="card__item stars">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li class="card__item">
+                    <span class="rate">Рейтинг: 9,2</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="catalog__more">
+              <button class="more__btn btn-1">Загрузить ещё</button>
+            </div>
+            <div class="catalog__pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item selected"><span>1</span></li>
+                <li class="pagination__item"><a href="#">2</a></li>
+                <li class="pagination__item"><a href="#">3</a></li>
+                <li class="pagination__item"><a href="#">4</a></li>
+                <li class="pagination__item"><a href="#">...</a></li>
+                <li class="pagination__item"><a href="#">10</a></li>
+              </ul>
+              <div class="catalog__count">
+                <p class="count__title">Гостиниц на странице:</p>
+                <select class="catalog__select">
+                  <option class="select__item">4</option>
+                </select>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="page__footer">
+        <section class="footer__promotion">
+          <div class="promotion__box">
+            <h2 class="promotion__title title">Подпишитесь на рассылку</h2>
+            <p class="promotion__text text">
+              Только полезная информация и никакого спама,<br />
+              честное бойскаутское!
+            </p>
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+              <div class="promotion__mail">
+                <input
+                  type="email"
+                  name="mail"
+                  id="mailtxt"
+                  placeholder="Ваш e-mail"
+                />
+                <input
+                  class="promotion__button"
+                  type="submit"
+                  value="Подписаться"
+                />
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="footer__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a
+                href="https://twitter.com/htmlacademy_ru"
+                class="contacts__icon"
+                ><img src="./img/social-twitter.svg" width="27" height="22,5"
+              /></a>
+              <a
+                href="https://www.facebook.com/htmlacademy"
+                class="contacts__icon ico-1"
+                ><img src="./img/social-facebook.svg" width="15" height="22,5"
+              /></a>
+              <a
+                href="https://www.youtube.com/c/HTMLAcademyRUS"
+                class="contacts__icon"
+                ><img src="./img/social-youtube.svg" width="30" height="24"
+              /></a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__tel" href="+7 (812) 812-12-12"
+                >+7 (812) 812-12-12</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a href="https://htmlacademy.ru" class="contacts__icon"
+                ><img src="./img/logo_htmlacademy.svg"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
