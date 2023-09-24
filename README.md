@@ -1,2 +1,2 @@
 # Sedona
- htmlacademy students project
+ htmlacademy student project
