@@ -416,6 +416,23 @@ a {
   border-radius: 0px 10px 10px 0px;
   width: 200px;
 }
+.promotion__button:hover {
+  background: #68a2ca;
+}
+.promotion__button:focus {
+  background: #68a2ca;
+  border: #756257 3px solid;
+  border-radius: 10px;
+}
+.promotion__button:active {
+  opacity: 30%;
+}
+.catalog__sort,
+.catalog__list,
+.catalog__more,
+.catalog__pagination {
+  margin: 0 70px;
+}
 .navbar__list {
   font-size: 16px;
   line-height: normal;
