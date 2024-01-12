@@ -1,7 +1,7 @@
 # Sedona
 
 Учебный проект Седона выполнен в рамках курса Фронтенд разработчик от [htmlacademy](https://htmlacademy.ru)
-![htmlacademy](https://ritfest.ru/i/ritfest/2018/reunion/members/html_academy.png)
+![htmlacademy](https://github.com/htmlacademy/logo/blob/master/png/logo-description/logo-color-3.png)
 
 # Результат работы
   ### Результат доступен по ссылке [https://lebedev05tmn.github.io/Sedona](https://lebedev05tmn.github.io/Sedona)
